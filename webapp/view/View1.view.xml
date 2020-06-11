@@ -1,0 +1,26 @@
+<mvc:View 
+          controllerName="ovly.controle.controller.View1" 
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:my="ovly.controle.custom"
+          displayBlock="true" 
+          xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					
+						<my:YouTubePlayer largura="600px" fonte="lsLgPwQmOGw" />
+						
+					<VBox items="{/}">
+						<items>
+							<my:YouTubePlayer  fonte="{url}"  largura="250px"/>
+						</items>
+					</VBox>
+					
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
